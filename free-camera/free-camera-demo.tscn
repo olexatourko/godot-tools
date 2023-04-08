@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctv1yquyqnapv"]
+
+[ext_resource type="Script" path="res://free-camera/FreeCamera.cs" id="1_vjr5d"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rkydb"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.27119)
+script = ExtResource("1_vjr5d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_rkydb")
